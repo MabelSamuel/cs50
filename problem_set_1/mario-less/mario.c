@@ -5,11 +5,14 @@ void print_row(int spaces, int bricks);
 int main(void)
 {
     int height;
+    // Prompt the user for the pyramid's height
     do
     {
         height = get_int("Height: ");
-    } while (height < 1);
+    } 
+    while (height < 1);
 
+    // Print a pyramid of that height
     for (int i = 0; i < height; i++)
     {
         print_row(height - i - 1, i + 1);
@@ -18,10 +21,12 @@ int main(void)
 
 void print_row(int spaces, int bricks)
 {
+    // Print spaces
     for (int i = 0; i < spaces; i++)
     {
         printf(" ");
     }
+    // Print bricks
     for (int j = 0; j < bricks; j++)
     {
         printf("#");
