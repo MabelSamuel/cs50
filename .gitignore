@@ -1,5 +1,6 @@
 # Compiled executables
 hello
+mario
 *.out
 *.exe
 
