@@ -10,7 +10,7 @@ int main(void)
     {
         height = get_int("Height: ");
     } 
-    while (height < 1);
+    while (height < 1 || height > 8);
 
     // Print a pyramid of that height
     for (int i = 0; i < height; i++)
@@ -27,6 +27,16 @@ void print_row(int spaces, int bricks)
         printf(" ");
     }
     // Print bricks
+    for (int j = 0; j < bricks; j++)
+    {
+        printf("#");
+    }
+    // Print space
+    for (int i = 0; i < 2; i++)
+    {
+        printf(" ");
+    }
+    // Print bricks after space
     for (int j = 0; j < bricks; j++)
     {
         printf("#");
