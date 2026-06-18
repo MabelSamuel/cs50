@@ -1,6 +1,8 @@
 # Compiled executables
 hello
 mario
+problem_set_1/cash/cash
+problem_set_1/credit/credit
 *.out
 *.exe
 
